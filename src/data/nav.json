@@ -1,0 +1,19 @@
+{
+  "nav": [
+    {
+      "zh": "Work",
+      "en": "Work",
+      "path": "/work"
+    },
+    {
+      "zh": "Personal",
+      "en": "Personal",
+      "path": "/personal"
+    },
+    {
+      "zh": "Contact",
+      "en": "Contact",
+      "path": "/contact"
+    }
+  ]
+}
