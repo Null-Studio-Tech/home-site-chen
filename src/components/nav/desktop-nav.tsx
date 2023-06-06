@@ -18,7 +18,7 @@ export default function DesktopNav() {
               </div>)
               :
               (<div className='hidden group-hover:flex absolute inset-0 justify-center items-center'>
-                <div className='w-[80px] h-[52px] animate-highlight-small bg-highlight-small animate-mode-forwards'></div>
+                <div className='w-[80px] h-[52px] transform animate-highlight-small bg-highlight-small animate-mode-forwards'></div>
               </div>)}
           </div>
         </Link>))}

@@ -1,8 +1,9 @@
-import Image from 'next/image'
-import 'react-dom'
+'use client';
 import AppNav from '@/components/nav/app-nav';
 
 export default function Home() {
+
+  const onCanPlayHandle = () => { console.log('video can play') }
 
   return (
     <main className="w-screen h-screen relative bg-slate-300 overflow-hidden">
@@ -11,7 +12,7 @@ export default function Home() {
         <AppNav></AppNav>
       </div>
       {/* <Image className='z-0' src={BgImage} alt='home background' fill={true} priority></Image> */}
-      <video className='z-0 h-full w-full object-cover object-center' src='video/landing-page-video.mp4' autoPlay loop muted></video>
+      <video className='z-0 h-full w-full object-cover object-center' src='video/landing-page-video.webm' autoPlay loop muted onCanPlay={onCanPlayHandle}></video>
     </main>
   )
 }
