@@ -10,13 +10,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 19
-          cache: npm
       - uses: pnpm/action-setup@v2
         with:
           version: 8.2.0
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 19
+          cache: pnpm
 
       - name: Build
         run: |
